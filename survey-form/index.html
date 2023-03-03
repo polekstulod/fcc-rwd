@@ -8,8 +8,12 @@
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>"
     />
-    <title>Survey Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <title>Survey Form</title>
   </head>
   <body>
     <div id="header">
@@ -114,7 +118,18 @@
           <label for="story">Tell us your story:</label> <br />
           <textarea id="story" name="story" rows="5" cols="33"></textarea>
         </fieldset>
-        <button type="submit" id="submit">Submit form</button>
+        <button
+          type="submit"
+          id="submit"
+          onclick=' Swal.fire({
+          title: "Congratulations!",
+          text: "Sucessfully submitted",
+          icon: "success",
+          confirmButtonText: "Cool",
+        })'
+        >
+          Submit form
+        </button>
       </div>
     </form>
   </body>

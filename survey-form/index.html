@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>"
+    />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et excepturi
+        vitae modi omnis neque perspiciatis impedit aut labore, veritatis error
+        quos at, sapiente beatae!
+      </p>
+    </div>
+
+    <form action="#" id="survey-form">
+      <div id="form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div>
+            <label for="name" id="name-label">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your Name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" id="email-label">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div>
+            <label for="number" id="number-label">Number:</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              max="100"
+              min="1"
+              placeholder="Enter your Number"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Choose a pet:</legend>
+          <select name="pets" id="dropdown">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Select a maintenance drone:</legend>
+
+          <div>
+            <input type="radio" id="huey" name="drone" value="huey" checked />
+            <label for="huey">Huey</label>
+          </div>
+
+          <div>
+            <input type="radio" id="dewey" name="drone" value="dewey" />
+            <label for="dewey">Dewey</label>
+          </div>
+
+          <div>
+            <input type="radio" id="louie" name="drone" value="louie" />
+            <label for="louie">Louie</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Choose your monster's features:</legend>
+
+          <div>
+            <input
+              type="checkbox"
+              id="scales"
+              name="scales"
+              value="scales"
+              checked
+            />
+            <label for="scales">Scales</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="horns" name="horns" value="horns" />
+            <label for="horns">Horns</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Comments</legend>
+          <label for="story">Tell us your story:</label> <br />
+          <textarea id="story" name="story" rows="5" cols="33"></textarea>
+        </fieldset>
+        <button type="submit" id="submit">Submit form</button>
+      </div>
+    </form>
+  </body>
+</html>
